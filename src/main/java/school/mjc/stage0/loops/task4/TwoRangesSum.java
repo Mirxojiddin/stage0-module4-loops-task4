@@ -5,11 +5,13 @@ public class TwoRangesSum {
         int summ = 0,sum2=0, j=1;
         if (lastInRow<numberToSkip){
             if (lastInRow<0)
-                System.out.print("last number in row is negative");
-            else 
-            System.out.print("number to skip is bigger then the last");
+                System.out.println("last number in row is negative");
+            else
+                System.out.println("number to skip is bigger then the last");
         }
-        else {
+        else if (lastInRow<0)
+                System.out.println("last number in row is negative");
+            else {
                 for (int i = 1; i<=numberToSkip; i++){
                     summ+=i;
                     j=i;
@@ -20,9 +22,5 @@ public class TwoRangesSum {
                 System.out.println("skipped sum is "+summ);
                 System.out.println("counted sum is "+sum2);
                 }
-    }
-    public static void main(String[] args) {
-        TwoRangesSum twoRangesSum = new TwoRangesSum();
-        twoRangesSum.printSumOfTwoRanges(10, 10);
     }
 }

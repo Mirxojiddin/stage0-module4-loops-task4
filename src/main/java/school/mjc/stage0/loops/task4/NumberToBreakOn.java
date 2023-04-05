@@ -5,15 +5,19 @@ public class NumberToBreakOn {
         if (toBreakWith>numberToGoUntil){
             System.out.println("iterating till the end");
             for (int i=1; i<=numberToGoUntil; i++){
-                if (i==toBreakWith)
-                        break;    
+                if (i==toBreakWith){
+                    System.out.println(i);
+                    break;    
+                }
                 System.out.println(i);
             }
         }
         else {
             for (int i=1; i<=numberToGoUntil; i++){
-                if (i==toBreakWith)
+                if (i==toBreakWith){
+                    System.out.println(i);
                     break;
+                }
                 System.out.println(i);
     
             }
